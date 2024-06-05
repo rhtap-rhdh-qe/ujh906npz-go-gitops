@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ujh906npz-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ujh906npz-go 
+  name: ujh906npz-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: ujh906npz-go 
